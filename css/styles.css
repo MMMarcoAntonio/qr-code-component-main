@@ -18,6 +18,11 @@ html {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -32,14 +37,16 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+picture,
 img {
   max-width: 100%;
+  display: block;
 }
 
 main {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  height: 100%;
 }
 
 .card {
@@ -47,7 +54,6 @@ main {
   width: calc(100% - 5.2rem);
   max-width: 32rem;
   border-radius: var(--border-radius-card);
-  overflow: hidden;
   background-color: var(--background-color-card);
   text-align: center;
   padding: 1.5rem;
